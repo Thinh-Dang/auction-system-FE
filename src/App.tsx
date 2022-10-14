@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Homepage from "./pages/Homepage/Homepage";
-import { Navbar } from "./components";
+import { Header } from "./components";
 import Signin from "./pages/Auth/components/Signin";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App px-[9rem]">
-      <Navbar />
+      <Header />
       {/* <Homepage /> */}
       <Signin />
     </div>
