@@ -1,8 +1,7 @@
-import React from 'react'
 import Logo from '../assets/Bold.svg'
-import APP_PATH from '../constant/APP_PATH'
 import Button from './Button'
 import Navcontainer from './Navcontainer'
+import '../styles/components/Header.css'
 
 const Header = () => {
   return (
