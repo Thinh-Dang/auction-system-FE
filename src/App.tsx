@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Homepage from "./pages/Homepage/Homepage";
 import { Header } from "./components";
-import Signin from "./pages/Auth/components/Signin";
+import Signin from "./pages/Auth/Signin";
 
 function App() {
   const [count, setCount] = useState(0);
