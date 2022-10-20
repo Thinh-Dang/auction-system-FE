@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
+
 
 const NavItem = ( {href, content, active, classes }: INavItemProps) => {
   return (
-    <li className={`${classes} ${active && 'active'}`}><a href={href}>{content}</a></li>
-          
-  )
-}
+    <li className={`${classes} ${active && "active"}`}>
+      <a href={href}>{content}</a>
+    </li>
+  );
+};
 
-export default NavItem
+export default NavItem;

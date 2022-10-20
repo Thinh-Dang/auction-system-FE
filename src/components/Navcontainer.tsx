@@ -12,4 +12,4 @@ const Navcontainer = () => {
   )
 }
 
-export default Navcontainer
+export default Navcontainer;
