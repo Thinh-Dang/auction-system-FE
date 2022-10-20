@@ -1,13 +1,13 @@
 declare interface IButtonProps {
   classes: string;
   content: string;
-  onClick?: () => {};
+  onClick?: () => void;
 }
 
 declare interface IInputProps {
   classes: string;
   content: string;
-  onClick?: () => {};
+  onClick?: () => void;
 }
 declare interface INavItemProps {
     href: string,

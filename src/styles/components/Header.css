@@ -1,8 +1,11 @@
-.navItem, .navItem::after {
-    transition: all 10ms;
-}
-.navItem:hover:after {
+/* .navItem:hover:after,  */
+.navItem.active:after {
     width: 70%;
+}
+.navItem:hover, 
+.navItem.active {
+    color: #2e6d81;
+    
 }
 .navItem::after {
     content: '';
@@ -13,4 +16,5 @@
     width: 0;
     height: 4px;
     border-radius: 2px;
+    transition: width ease-in-out .2s;
 }
