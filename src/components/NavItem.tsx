@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavItem = ( {href, content, active, classes }) => {
+const NavItem = ( {href, content, active, classes }: INavItemProps) => {
   return (
     <li className={`${classes} ${active && 'active'}`}><a href={href}>{content}</a></li>
           
