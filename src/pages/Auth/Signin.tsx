@@ -7,7 +7,7 @@ const Signin = () => {
     e.preventDefault();
   };
   return (
-    <section className="w-full h-screen pt-15 flex px-[9rem]">
+    <section className="w-full h-screen pt-[4rem] flex px-[9rem]">
       <div className="w-full flex flex-col items-center">
         <div className="flex flex-col items-center gap-4">
           <h2 className="text-6xl font-semibold">Welcome Back!</h2>
@@ -78,7 +78,7 @@ const Signin = () => {
             <div className="w-full flex items-center justify-center text-xl">
               <p>
                 Don't have an account yet?{" "}
-                <span className="text-blue-400 cursor-pointer">Sign up</span>
+                <span className="text-blue-400 cursor-pointer hover:underline">Sign up</span>
               </p>
             </div>
           </form>
