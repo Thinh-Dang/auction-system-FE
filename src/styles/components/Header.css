@@ -1,0 +1,16 @@
+.navItem, .navItem::after {
+    transition: all 10ms;
+}
+.navItem:hover:after {
+    width: 70%;
+}
+.navItem::after {
+    content: '';
+    background: #FF7B29;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+}
