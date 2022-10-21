@@ -7,7 +7,11 @@ const Signin = () => {
     e.preventDefault();
   };
   return (
+<<<<<<< HEAD
     <section className="w-full h-screen pt-16 flex px-[9rem]">
+=======
+    <section className="w-full h-screen pt-[4rem] flex px-[9rem]">
+>>>>>>> 136dd7c2cf96f0e73c3046d9177c186cef72a4d4
       <div className="w-full flex flex-col items-center">
         <div className="w-[40rem] flex flex-col items-center gap-4">
           <h2 className="text-6xl font-semibold">Welcome Back!</h2>
@@ -78,7 +82,7 @@ const Signin = () => {
             <div className="w-full flex items-center justify-center text-xl">
               <p>
                 Don't have an account yet?{" "}
-                <span className="text-blue-400 cursor-pointer">Sign up</span>
+                <span className="text-blue-400 cursor-pointer hover:underline">Sign up</span>
               </p>
             </div>
           </form>

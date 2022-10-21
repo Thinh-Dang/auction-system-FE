@@ -1,15 +1,20 @@
-import React from 'react'
 import Logo from '../assets/Bold.svg'
-import APP_PATH from '../constant/APP_PATH'
 import Button from './Button'
 import Navcontainer from './Navcontainer'
+import '../styles/components/Header.css'
+import { useNavigate } from 'react-router-dom'
+import APP_PATH from '../constant/APP_PATH'
 
 const Header = () => {
+  const navigate = useNavigate();
+  const redirectToSignin = () => {
+    navigate(APP_PATH.SIGNIN.href);
+  }
   return (
     <section className='Navbar w-full flex justify-between py-[4rem] text-caption-1'>
       <img src={Logo} alt="Logo" />
       <Navcontainer/>
-      <Button classes='bg-main-blue text-white' content='Signin'/>
+      <Button classes='bg-main-blue text-white' content='Signin' onClick={redirectToSignin}/>
     </section>
   )
 }
