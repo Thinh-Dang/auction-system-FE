@@ -7,9 +7,9 @@ const Signin = () => {
     e.preventDefault();
   };
   return (
-    <section className="w-full h-screen pt-15 flex px-[9rem]">
+    <section className="w-full h-screen pt-16 flex px-[9rem]">
       <div className="w-full flex flex-col items-center">
-        <div className="flex flex-col items-center gap-4">
+        <div className="w-[40rem] flex flex-col items-center gap-4">
           <h2 className="text-6xl font-semibold">Welcome Back!</h2>
           <p className="text-2xl text-gray-600">
             Login to see the biggest Antique Collection Website
