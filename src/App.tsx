@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path={APP_PATH.ROOT.href} element={<Homepage />} />
         <Route path={APP_PATH.SIGNIN.href} element={<Signin />} />
+        <Route path={APP_PATH.SIGNUP.href} element={<Signup />} />
       </Routes>
-      <Signup />
     </div>
   );
 }
