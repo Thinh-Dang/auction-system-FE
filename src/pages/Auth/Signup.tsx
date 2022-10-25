@@ -1,6 +1,6 @@
 import { FaUserAlt } from "react-icons/fa";
 import { HiLockClosed } from "react-icons/hi";
-import { MdAlternateEmail,MdPhone } from "react-icons/md";
+import { MdAlternateEmail, MdPhone } from "react-icons/md";
 import { Button } from "../../components";
 
 const Signup = () => {
@@ -77,6 +77,14 @@ const Signup = () => {
               transition-all ease-in-out duration-400 text-3xl text-h2 justify-center "
                 content="Register"
               />
+            </div>
+            <div className="w-full flex items-center justify-center text-xl mt-8">
+              <p>
+                Already have an account?{" "}
+                <span className="text-blue-400 cursor-pointer hover:underline">
+                  Sign in
+                </span>
+              </p>
             </div>
           </form>
         </div>
