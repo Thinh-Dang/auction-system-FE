@@ -9,7 +9,7 @@ const Signin = () => {
   return (
     <section className="w-full h-screen pt-[4rem] flex px-[9rem]">
       <div className="w-full flex flex-col items-center">
-        <div className="flex flex-col items-center gap-4">
+        <div className="min-w-[40rem] flex flex-col items-center gap-4">
           <h2 className="text-6xl font-semibold">Welcome Back!</h2>
           <p className="text-2xl text-gray-600">
             Login to see the biggest Antique Collection Website
@@ -17,14 +17,13 @@ const Signin = () => {
 
           <form className="w-full">
             <div className="w-full flex flex-col gap-3 my-8 relative">
-              <label htmlFor="email" className="text-2xl">
+              <label htmlFor="emailInput" className="text-2xl">
                 Email:
               </label>
               <input
                 type="emailInput"
                 required
                 id="emailInput"
-                size={20}
                 placeholder="Enter your email address"
                 className="w-full h-[4.5rem] border border-solid rounded-xl border-gray-400 shadow-lg focus:border-2 
           focus:border-blue-500 focus-within:border-main-light_blue outline-none text-h2 p-5"
@@ -40,7 +39,6 @@ const Signin = () => {
                 type="password"
                 required
                 id="passwordInput"
-                size={30}
                 placeholder="Enter your password here"
                 className="w-full h-[4.5rem] border border-solid rounded-xl border-gray-400 shadow-lg focus:border-2 
           focus:border-blue-500 focus-within:border-main-light_blue outline-none text-h2 p-5"
@@ -67,8 +65,8 @@ const Signin = () => {
 
             <div className="w-full group">
               <Button
-                classes="mt-8 bg-gradient-to-tr from-orange-400 to-orange-500 group-hover:from-blue-400 group-hover:to-main-light_blue
-              transition-all ease-in-out duration-400 text-3xl"
+                classes="mt-8 bg-main-orange group-hover:bg-[#ff7b29db] text-white text-[1.6rem]  font-medium
+              transition-all ease-in-out duration-400 text-3xl text-h2 justify-center "
                 content="Login"
               />
             </div>
@@ -78,7 +76,9 @@ const Signin = () => {
             <div className="w-full flex items-center justify-center text-xl">
               <p>
                 Don't have an account yet?{" "}
-                <span className="text-blue-400 cursor-pointer hover:underline">Sign up</span>
+                <span className="text-blue-400 cursor-pointer hover:underline">
+                  Sign up
+                </span>
               </p>
             </div>
           </form>
