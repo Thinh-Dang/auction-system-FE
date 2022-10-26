@@ -12,13 +12,12 @@ const Header = () => {
   }
   return (
     <section className='Navbar w-full flex justify-between py-[4rem] text-caption-1'>
-      <Link to={'/'}>
-        
+      <Link to={'/'} className='flex items-center'>
          <img src={Logo} alt="Logo" />
-        </Link>
+      </Link>
         
       <Navcontainer/>
-      <Button classes='bg-main-blue text-white' content='Signin' onClick={redirectToSignin}/>
+      <Button classes='bg-main-blue text-white text-button-2' content='Signin' onClick={redirectToSignin}/>
     </section>
   )
 }
