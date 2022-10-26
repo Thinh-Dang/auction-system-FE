@@ -1,1 +1,1 @@
-declare interface IProps {}
+
