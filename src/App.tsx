@@ -6,6 +6,7 @@ import Signin from "./pages/Auth/Signin";
 import Signup from "./pages/Auth/Signup";
 import { createBrowserRouter, Route, Routes } from "react-router-dom";
 import APP_PATH from "./constant/APP_PATH";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path={APP_PATH.SIGNIN.href} element={<Signin />} />
         <Route path={APP_PATH.SIGNUP.href} element={<Signup />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
