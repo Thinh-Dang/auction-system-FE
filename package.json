@@ -24,8 +24,10 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.2",
     "socket.io-client": "^4.5.2",
-    "yup": "^0.32.11",
-    "swiper": "^8.4.4"
+    "swiper": "^8.4.4",
+    "timeago-react": "^3.0.5",
+    "timeago.js": "^4.0.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "^18.7.23",
