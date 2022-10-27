@@ -7,6 +7,7 @@ import Signup from "./pages/Auth/Signup";
 import { createBrowserRouter, Route, Routes } from "react-router-dom";
 import APP_PATH from "./constant/APP_PATH";
 import Forgot from "./pages/Auth/Forgot";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path={APP_PATH.SIGNUP.href} element={<Signup />} />
         <Route path={APP_PATH.FORGOTPASSWORD.href} element={<Forgot />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

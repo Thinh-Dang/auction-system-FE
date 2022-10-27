@@ -1,8 +1,14 @@
-import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from '../../../components/Button'
+import APP_PATH from '../../../constant/APP_PATH';
 import IconContainer from './IconContainer'
 
 const HeroBanner = () => {
+  const navigate = useNavigate();
+
+  const navigateToCollections = () => {
+    navigate(APP_PATH.PRODUCTS.href);
+  }
   return (
     <section 
       className='w-full mt-[1rem] flex flex-col md:flex-row space-between 
@@ -15,14 +21,16 @@ const HeroBanner = () => {
           <span className='text-main-blue'>Antique Collection</span>
         </h1>
         <p className="HeroBanner-introduce text-caption-1 leading-[2.5rem]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Eget in mattis lacus urna, neque lectus ultrices. 
-          Mus nec enim, amet, turpis sem in lacinia morbi nam
+          Welcome to one of the most extrodinary Antique auction website. Here we collect and help user sell their antique easily
         </p>
-        <Button classes='self-start text-white bg-main-orange text-button-2' content='Discover now'/>
+        <Button 
+          classes='self-start text-white bg-main-orange text-button-2' 
+          content='Discover now'
+          onClick={navigateToCollections}  
+        />
       </div>
 
-      <img src="./images/herobanner.jpg" alt="" className='w-[40%] m-w-[40rem] h-auto hidden md:block'/>
+      <img src="./images/herobanner.jpg" alt="" className='w-[40%] max-w-[40rem] h-auto hidden md:block'/>
 
       <div className="HeroBanner-info flex flex-col gap-[4rem] hidden md:flex">
         <div className="HeroBanner-info-item flex gap-[1rem] flex items-center text-[#404040]">

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/*.{js,ts,jsx,tsx}",
@@ -67,8 +68,10 @@ module.exports = {
       },
       boxShadow: {
         'iconContainer' : '1px 1px 13px rgba(0, 0, 0, 0.19)',
-      }
+        'searchSection' : '1px 21px 54px 10px #0000000F',
+        'productCard' : '0px 4px 14px rgba(0, 0, 0, 0.2)',
+      },
     },
   },
   plugins: [],
-};
+});
