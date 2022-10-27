@@ -70,7 +70,7 @@ module.exports = withMT({
       boxShadow: {
         'iconContainer' : '1px 1px 13px rgba(0, 0, 0, 0.19)',
         'searchSection' : '1px 21px 54px 10px #0000000F',
-        'productCard' : '0px 4px 14px rgba(0, 0, 0, 0.2)',
+        'productCard' : '0px 0px 10px 0px rgb(0 25 54 / 10%)',
       },
     },
   },
