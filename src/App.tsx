@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App px-[9rem]">
+    <div className="App md:px-[9rem] px-8">
       <Header />
       <Routes>
         <Route path={APP_PATH.ROOT.href} element={<Homepage />} />
