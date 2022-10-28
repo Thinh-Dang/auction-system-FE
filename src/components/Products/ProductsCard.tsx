@@ -2,7 +2,7 @@ import Button from '../Button'
 import TimeAgo from 'timeago-react';
 import * as timeago from 'timeago.js';
 import en from 'timeago.js/lib/lang/en_US';
-timeago.register('vi', en);
+timeago.register('en', en);
 
 const ProductsCard = ({product}: any) => {
   return (
@@ -20,19 +20,19 @@ const ProductsCard = ({product}: any) => {
                 <span className="product-year">{product.type}</span>
             </div>
             <div className="product-price w-full flex justify-between">
-                <span>${product.price}</span>
-                <Button content='Bid now' classes='bg-main-blue text-white' />
+               <span>${product.price}</span>
+               <Button content="Bid now" classes="bg-main-blue text-white" />
             </div>
             <div className="product-detail w-full flex justify-between">
                 <span>{`${product.bids} ${product.bids > 1 ? 'bids' : 'bid'} so far`} </span>
                 <span className='text-body-3 text-[#999999]'>
                   Bidding closes
-                  <TimeAgo className='ml-2' datetime={new Date(product.endDate)} locale="vi" />
+                  <TimeAgo className='ml-2' datetime={new Date(product.endDate)} locale="en" />
                 </span>
             </div>
-        </div>
-    </div>
-  )
-}
+         </div>
+      </div>
+   );
+};
 
-export default ProductsCard
+export default ProductsCard;
