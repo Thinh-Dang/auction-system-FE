@@ -61,6 +61,7 @@ module.exports = withMT({
           light_blue: "#53C6DD",
           white: "#FFFFFF",
           gray: "#404040",
+          light_grey: "#4C4C4C",
         },
       },
       fontFamily: {

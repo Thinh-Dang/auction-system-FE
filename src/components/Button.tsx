@@ -6,7 +6,7 @@ const Button = ({
 }: IButtonProps) => {
    return (
       <button
-         className={`flex primaryBtn rounded-lg py-[1rem] px-[2.5rem] btn ${classes}`}
+         className={`flex primaryBtn rounded-lg py-[1em] px-[3rem] btn ${classes}`}
          onClick={onClick}
          type={type}
       >
