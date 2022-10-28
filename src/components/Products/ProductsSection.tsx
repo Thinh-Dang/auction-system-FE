@@ -18,7 +18,7 @@ const ProductsSection = ({ title, description, products }: IProductsSectionProps
             <IconContainer onClick={() => scroll( 400, productsListRef)} iconSrc='./icons/arrow-right.svg' classes='rounded-full bg-main-orange cursor-pointer' />
           </div>
         </div>
-        <div ref={productsListRef} className="products-list w-full overflow-x-scroll flex flex-row gap-[6rem] p-4 py-12">
+        <div ref={productsListRef} className="products-list w-full overflow-x-scroll flex flex-row gap-[6rem] md:p-4 md:py-12">
           { products?.map((product) => (<ProductsCard key={'product' + product.id} product={product} />)) }
         </div>
     </section>
