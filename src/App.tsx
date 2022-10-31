@@ -18,6 +18,7 @@ function App() {
         <Route path={APP_PATH.SIGNIN.href} element={<Signin />} />
         <Route path={APP_PATH.SIGNUP.href} element={<Signup />} />
         <Route path={APP_PATH.FORGOTPASSWORD.href} element={<Forgot />} />
+        <Route path='*' element={<Homepage />} />
       </Routes>
       <Footer />
     </div>

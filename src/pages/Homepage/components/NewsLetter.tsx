@@ -4,7 +4,7 @@ import IconContainer from './IconContainer'
 const NewsLetter = () => {
   const inputRef = useRef(null);
   return (
-    <section className='w-full bg-main-dark_blue p-4 py-[4rem] md:py-[5rem] md:px-[10rem] rounded-[12px] items-center flex md:flex-row flex-col justify-between'>
+    <section className='w-full bg-main-dark_blue p-4 py-[4rem] gap-4 md:py-[5rem] md:px-[10rem] rounded-[12px] items-center flex md:flex-row flex-col justify-between'>
         <div className="content text-white w-[80%] md:max-w-[60%] flex flex-col gap-24 ">
             <div className="info">
               <h2 className="title font-bold text-[3.8rem] leading-[6rem]">Subscribe our newsletter</h2>
