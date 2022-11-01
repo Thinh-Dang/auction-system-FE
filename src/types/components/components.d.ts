@@ -24,6 +24,7 @@ declare interface ISelectInputProps {
 declare interface IIconContainerProps {
    iconSrc: string;
    classes?: string;
+   onClick?: () => void;
 }
 declare interface Product {
    id: string;

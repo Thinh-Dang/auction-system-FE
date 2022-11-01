@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import Homepage from "./pages/Homepage/Homepage";
 import { Header } from "./components";
@@ -12,7 +11,7 @@ import Detail from "./pages/Detail/Detail";
 
 function App() {
    return (
-      <div className="App px-[9rem]">
+      <div className="App md:px-[9rem] px-8">
          <Header />
          <Routes>
             <Route path={APP_PATH.ROOT.href} element={<Homepage />} />
@@ -20,6 +19,7 @@ function App() {
             <Route path={APP_PATH.SIGNUP.href} element={<Signup />} />
             <Route path={APP_PATH.FORGOTPASSWORD.href} element={<Forgot />} />
             <Route path={APP_PATH.DETAILPRODUCT.href} element={<Detail />} />
+            <Route path="*" element={<Homepage />} />
          </Routes>
          <Footer />
       </div>
