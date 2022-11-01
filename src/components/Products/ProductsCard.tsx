@@ -24,7 +24,7 @@ const ProductsCard = ({ product }: any) => {
                <span>${product.price}</span>
                <Button content="Bid now" classes="bg-main-blue text-white" />
             </div>
-            <div className="product-detail w-full flex justify-between">
+            <div className="product-detail w-full flex justify-between ">
                <span>
                   {`${product.bids} ${
                      product.bids > 1 ? "bids" : "bid"
