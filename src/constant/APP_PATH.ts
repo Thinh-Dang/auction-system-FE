@@ -1,9 +1,10 @@
 const APP_PATH = {
-  ROOT: { href: "/", navContent: "Home" },
-  PRODUCTS: { href: "/products", navContent: "Collections" },
-  SIGNIN: { href: "/signin" },
-  SIGNUP: { href: "/signup" },
-  FORGOTPASSWORD: { href: "/forgot" },
-  SELLPRODUCT: { href: "/sell", navContent: "Sell An Antique" },
+   ROOT: { href: "/", navContent: "Home" },
+   PRODUCTS: { href: "/products", navContent: "Collections" },
+   SIGNIN: { href: "/signin" },
+   SIGNUP: { href: "/signup" },
+   FORGOTPASSWORD: { href: "/forgot" },
+   SELLPRODUCT: { href: "/sell", navContent: "Sell An Antique" },
+   DETAILPRODUCT: { href: "/detail" },
 };
 export default APP_PATH;

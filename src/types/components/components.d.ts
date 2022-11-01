@@ -17,34 +17,39 @@ declare interface INavItemProps {
    active: boolean;
 }
 declare interface ISelectInputProps {
-  label: string, 
-  options: string[],
-  classes?: string,
+   label: string;
+   options: string[];
+   classes?: string;
 }
-declare interface IIconContainerProps{
-  iconSrc: string,
-  classes?: string,
-  onClick?: () => void,
+declare interface IIconContainerProps {
+   iconSrc: string;
+   classes?: string;
+   onClick?: () => void;
 }
 declare interface Product {
-  id: string,
-  img: string,
-  productName: string,
-  year: number,
-  type: string,
-  bids: number,
-  price: number,
-  endDate: string,
+   id: string;
+   img: string;
+   productName: string;
+   year: number;
+   type: string;
+   bids: number;
+   price: number;
+   endDate: string;
+   description?: string;
 }
 enum productTypes {
-  'Weapons',
-  'Vases',
-  'Clocks',
-  'Statues',
-  'Jewels'
+   "Weapons",
+   "Vases",
+   "Clocks",
+   "Statues",
+   "Jewels",
 }
 declare interface IProductsSectionProps {
-  title: string,
-  description: string,
-  products: Product[],
+   title: string;
+   description: string;
+   products: Product[];
+}
+
+declare interface IProductDetailContainerProps {
+   product: Product;
 }
