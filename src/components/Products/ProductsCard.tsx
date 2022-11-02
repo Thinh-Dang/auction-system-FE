@@ -19,7 +19,7 @@ const ProductsCard = ({ product }: any) => {
          <img
             src={product.img}
             alt="antique"
-            className="product-img max-w-[32rem] w-[100%] h-auto object-cover"
+            className="product-img max-w-[32rem] w-[100%] h-auto object-cover max-h-[25rem]"
          />
          <div className="product-info flex flex-col gap-8 w-full mt-8 text-main-light_grey">
             <span className="font-bold text-[2.2rem]">
