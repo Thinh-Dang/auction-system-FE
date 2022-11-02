@@ -8,6 +8,7 @@ import APP_PATH from "./constant/APP_PATH";
 import Forgot from "./pages/Auth/Forgot";
 import Footer from "./components/Footer";
 import Detail from "./pages/Detail/Detail";
+import Collections from "./pages/Collections/Collections";
 
 function App() {
    return (
@@ -15,6 +16,7 @@ function App() {
          <Header />
          <Routes>
             <Route path={APP_PATH.ROOT.href} element={<Homepage />} />
+            <Route path={APP_PATH.PRODUCTS.href} element={<Collections />} />
             <Route path={APP_PATH.SIGNIN.href} element={<Signin />} />
             <Route path={APP_PATH.SIGNUP.href} element={<Signup />} />
             <Route path={APP_PATH.FORGOTPASSWORD.href} element={<Forgot />} />
